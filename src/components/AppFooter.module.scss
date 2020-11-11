@@ -1,0 +1,9 @@
+@import '../style/scss/style.scss';
+.AppFooter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: $footer-height;
+  background-color: $hex-dark-blue;
+  color: $text-invert-color;
+}

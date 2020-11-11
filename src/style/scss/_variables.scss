@@ -8,6 +8,9 @@ $hex-grey: #cbcbcb;
 $hex-light-grey: #e0e0e0;
 $hex-white: #ffffff;
 
+/** text */
+$text-invert-color: $hex-white;
+
 /** spacing */
 $spacing-small: 8px;
 $spacing-regular: 12px;
@@ -26,6 +29,7 @@ $box-shadow: 0px 2px $box-shadow-spread 0px rgba($hex-grey, 1);
 
 /*layers*/
 $z-index-header: 10;
+$z-index-menu: 100;
 
 /** screen widths  */
 $width-phone-start: 320px;

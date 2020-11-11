@@ -1,0 +1,62 @@
+@import '../style/scss/style.scss';
+
+.Header {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: $header-height;
+  background-color: $hex-dark-blue;
+  color: $text-invert-color;
+}
+
+.logo {
+  padding: $spacing-small $spacing-large;
+  flex-grow: 1;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  right: 0;
+  top: $header-height;
+  z-index: $z-index-menu;
+  box-shadow: $box-shadow;
+  background-color: $hex-white;
+
+  &Hidden {
+    display: none;
+  }
+
+  @media #{$media-min-tablet} {
+    height: $header-height;
+    background-color: transparent;
+    position: relative;
+    left: auto;
+    top: auto;
+    z-index: 1;
+    flex-direction: row;
+    box-shadow: none;
+
+    &Hidden {
+      display: flex;
+    }
+  }
+}
+
+.menuItem {
+  display: flex;
+  flex-direction: column;
+
+  @media #{$media-min-tablet} {
+    flex-direction: row;
+  }
+}
+.menuButton {
+  $size: 30px;
+  width: $size;
+  height: $size;
+  @media #{$media-min-tablet} {
+    display: none;
+  }
+}
